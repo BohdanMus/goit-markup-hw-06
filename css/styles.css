@@ -215,7 +215,6 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: var(--main-accent-color);
-  
 }
 
 /* FEATURE */
@@ -426,6 +425,7 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .logo-footer-1 {
   font-family: "Raleway";
@@ -491,9 +491,6 @@ body {
 .footer-tel:hover {
   color: var(--main-accent-color);
 }
-.footer-wrap {
-  margin-left: 70px;
-}
 .footer-soc-title {
   font-weight: 700;
   font-size: 14px;
@@ -538,74 +535,61 @@ body {
 .footer-soc-link:hover .footer-soc-icon {
   fill: var(--main-background-color);
 }
-.subscription-form {
-position: relative;
-left: 50%;
-transform: translateY(-160%);
-}
 .subscription-label {
   font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--main-background-color);
-display: flex;
-margin-bottom: 20px;
-
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+  margin-bottom: 20px;
+  display: flex;
 }
 .subscription-input {
   width: 358px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-margin-right: 12px;
-padding-right: 16px;
-padding-left: 16px;
-transition-property: border-color;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  padding-right: 16px;
+  padding-left: 16px;
+  color: var(--main-background-color);
+  transition-property: border-color;
   transition: var(--main-transition-duration)
-    var(--main-transition-timing-function);
+  var(--main-transition-timing-function);
 }
 .subscription-input::placeholder {
   font-weight: 400;
-font-size: 16px;
-line-height: 1.25;
-align-items: center;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .subscription-input:focus {
   color: var(--main-background-color);
   border-color: var(--main-accent-color);
-  outline:transparent
-
+  outline: transparent;
 }
 .button-subscription {
-width: 200px;
-height: 50px;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-color: var(--main-background-color);
-background-color: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: #2196F3;
-position: absolute;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-background-color);
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: #2196f3;
 }
 .icon-send {
-  position: relative;
-  top: 38%;
-  transform: translateY(-50%);
-  margin-left: 10px;
-
-
-
+  transform: translate(7px, 6px);
 }
 /* PORTFOLIO */
 .section-portfolio {
@@ -777,6 +761,7 @@ position: absolute;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
+  display: block;
   margin-bottom: 4px;
 }
 .input-wrap {
@@ -835,7 +820,8 @@ position: absolute;
 }
 .input-check {
   transition-property: border-color;
-  transition: var(--main-transition-duration) var(--main-transition-timing-function);
+  transition: var(--main-transition-duration)
+    var(--main-transition-timing-function);
 }
 .check-text {
   font-weight: 400;
@@ -890,4 +876,7 @@ position: absolute;
   letter-spacing: 0.06em;
   position: absolute;
   left: 165px;
+}
+.no-scroll {
+  overflow: hidden;
 }
